@@ -5,10 +5,6 @@ def roll_dice(sides):
     return random.randint(1, sides)
 
 
-# x = input("How many sides?: ")
-# print(roll_dice(int(x)))
-# print(roll_dice(int(x)))
-
 counter = {
     "d4Counter": 0,
     "d6Counter": 0,
