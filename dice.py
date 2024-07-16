@@ -1,4 +1,5 @@
 import random
+import matplotlib.pyplot as plt
 
 
 def roll_dice(sides):
@@ -36,4 +37,8 @@ while True:
                             break
 
 
-print(counter)
+for key, value in counter.items():
+    formatted_value = f"{value:,}"
+    print(f"{key}: {formatted_value}")
+plt.bar(list(counter.keys()), counter.values(), color="g")
+plt.show()
